@@ -40,9 +40,11 @@ function createMovie(movieId){
         const movie = document.createElement('li')
         const genre = `<span>${data.genres[0].name}</span>`
         const title = `<strong>${data.title}</strong>`
+        const image =  `https://image.tmdb.org/t/p/original${data.backdrop_path}`
+
 
         movie.innerHTML = genre + title + BUTTON_PLAY
-
+        movie.style.backgroundImage = `linear-gradient(180deg, rgba(14, 23, 47, 0.0001) 11.72%, #0E172F 100%), url('${image}')`
         moviesList.appendChild(movie)
     })
 }

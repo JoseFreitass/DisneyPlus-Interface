@@ -34,6 +34,12 @@
 
     width: 100%;
     max-width: 540px;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* Número de linhas mostradas */
+    -webkit-box-orient: vertical;
 }
 
 .movie button{

@@ -1,4 +1,4 @@
-const API_KEY = '03c4e3dc470296959d6bf68804146538'
+const API_KEY = '36f6b969572b120032312f924a92e7e6'
 const API_LANGUAGE = 'pt-br'
 const BASE_URL_IMAGE = {
   original: 'https://image.tmdb.org/t/p/original',
@@ -132,7 +132,7 @@ async function getMovieData(movieId) {
 }
 
 function loadMovies() {
-  const LIST_MOVIES = ['tt12801262', 'tt4823776', 'tt0800369', 'tt3896198', 'tt1211837', 'tt1825683']
+  const LIST_MOVIES = ['tt1453405', 'tt3521164', 'tt0317219', 'tt1217209', 'tt1772341', 'tt0398286']
   
   LIST_MOVIES.map(async (movie, index) => {
     const movieData = await getMovieData(movie)
